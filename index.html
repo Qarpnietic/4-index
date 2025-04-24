@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 Page</title>
+  <style>
+    body {
+        background-color: rgb(235, 236, 238);
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        margin: 0;
+        display: flex;
+    }
 
-    <style>
-        body {
-            background-color: rgb(235, 236, 238);
-            margin: 10%;
-        }
-        div {
-            display: inline-block;
-            margin-top: 10%;
-        }
-        h1 {
-            font-weight: bold;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 6em;
-            text-align: center;
-            margin-top: 0.17em;
-            margin-bottom: 0.17em;
-            margin-left: 0;
-            margin-right: 0;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 5%;
+        gap: 20px;
+    }
 
-            color: rgb(52, 65, 71);
-        }
-        p {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: bold;
+    .box {
+        padding: 20px;
+        width: 300px;
+    }
 
-            font-size: 1.3em;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-            text-align: center;
+    h1 {
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 6em;
+        margin: 0;
+        color: rgb(52, 65, 71);
+    }
 
-            color: rgb(111, 113, 123);
-            
-        }
-        
-    </style>
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-align: center;
+        color: rgb(111, 113, 123);
+        margin-top: 0px;
+    }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
+    a {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: rgb(235, 236, 238);
+        background-color: #686f89;
+        border: 3.5px solid #353d49;
+        padding: 10px 20px;
+        border-radius: 4.5px;
+        width: 130px;
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <img src="images/guy.jpg"/>
+    </div>
 
-    <body>
-        <img style="float: left;" src="images/guy.jpg" width="40%"
-        alt="An image of an onion">
-
-        <div style="width: 10%;">
-        </div>
-
-        <div style="width: 40%">
-            <h1>404</h1>
-            <p>Looks like this page is missing. Don't worry though, our best man is on the case.</p>
-            <a style="background-color: pink" href="#">Back Home</a>
-        </div>
-
-    </body>
-
+    <div class="box" style="text-align: center;">
+      <h1>404</h1>
+      <p>Looks like this page is missing. Don't worry though, our best man is on the case.</p>
+      <p style="color: #a7aab0; font-size: 0.9em;">
+        Meanwhile, why don't you again by going
+      </p>
+      <a href="#">BACK HOME</a>
+    </div>
+  </div>
+</body>
 </html>
